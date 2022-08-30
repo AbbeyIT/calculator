@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="main">
+        <div class="main-title">
+            <h1>Online Calculator</h1>
+        </div>
+        
+        <div class="calculator">
+            <div class="calc-screen">
+                <div class="screen-last" id="lastOperationScreen"></div>
+                <div class="screen-current" id="currentOperationScreen">0</div>
+            </div>
+
+            <div class="btn-grid">
+                <div class="row">
+                    <div class="btn modifier" id="clear">A/C</div>
+                    <div class="btn modifier" id="negate">+/-</div>
+                    <div class="btn modifier" id="percent">%</div>
+                    <div class="btn operator" id="divide">÷</div>
+                </div>
+                <div class="row">
+                    <div class="btn number" id="seven">7</div>
+                    <div class="btn number" id="eight">8</div>
+                    <div class="btn number" id="nine">9</div>
+                    <div class="btn operator" id="multiply">×</div>
+                </div>
+                <div class="row">
+                    <div class="btn number" id="four">4</div>
+                    <div class="btn number" id="five">5</div>
+                    <div class="btn number" id="six">6</div>
+                    <div class="btn operator" id="subtract">-</div>
+                </div>
+                <div class="row">
+                    <div class="btn number" id="one">1</div>
+                    <div class="btn number" id="two">2</div>
+                    <div class="btn number" id="three">3</div>
+                    <div class="btn operator" id="add">+</div>
+                </div>
+                <div class="row">
+                    <div class="btn number" id="zero">0</div>
+                    <div class="btn number" id="decimal">.</div>
+                    <div class="btn" id="equals">=</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Created by AbbeyIT ©<script>document.write(new Date().getFullYear())</script></p>
+    </footer>
+
+	<script src="./script/script.js"></script>
+</body>
+</html>

@@ -58,13 +58,13 @@ function clearVar(name = "") {
 }
 
 function mathOperation() {
-    if (lastOperation === "x") {
+    if (lastOperation === "×") {
         result = parseFloat(result) * parseFloat(dis2Num);
     } else if (lastOperation === "+") {
         result = parseFloat(result) + parseFloat(dis2Num);
     } else if (lastOperation === "-") {
         result = parseFloat(result) - parseFloat(dis2Num);
-    } else if (lastOperation === "/") {
+    } else if (lastOperation === "÷") {
         result = parseFloat(result) / parseFloat(dis2Num);
     } else if (lastOperation === "%") {
         result = parseFloat(result) % parseFloat(dis2Num);
@@ -125,9 +125,9 @@ window.addEventListener("keydown", (e) => {
     ) {
         clickButtonEl(e.key);
         // console.log(e.key)
-    } else if (e.key === "+" || e.key === "-" || e.key === "/" || e.key === "%") {
+    } else if (e.key === "+" || e.key === "-" || e.key === "÷" || e.key === "%") {
         clickOperation(e.key);
-    } else if (e.key === "*") {
+    } else if (e.key === "×") {
         clickOperation("x");
         // console.log(e.key)
     } else if (e.key == "Enter" || e.key === "=") {

@@ -6,6 +6,7 @@ const displayResult = document.querySelector(".result");
 // const currentOperationScreen = document.querySelector('.currentOperationScreen')
 const modifier = document.querySelectorAll('.modifier')
 const clear = document.querySelector('#clear')
+const negate = document.querySelector('#negate')
 const operator = document.querySelectorAll('.operator')
 const numbers = document.querySelectorAll('.number')
 const equals = document.querySelector('#equals')
@@ -20,6 +21,7 @@ let result = null;
 let lastOperation = "";
 let haveDot = false;
 
+
 numbers.forEach((number) => {
     number.addEventListener("click", (e) => {
         if (e.target.innerText === "." && !haveDot) {
@@ -31,6 +33,8 @@ numbers.forEach((number) => {
         display2.innerText = dis2Num;
         // console.log();
     });
+
+
 });
 
 operator.forEach((operation) => {
@@ -95,6 +99,14 @@ clear.addEventListener("click", () => {
 clear.addEventListener("click", () => {
     display2.innerText = "";
     dis2Num = "";
+});
+
+//Event listener for the negate button
+negate.addEventListener("click", () => {
+    //change the string to number to toggle between multiplied by a negative one then changed back to string.
+    display2.innerText = (Number(display2.innerText)*-1).toString() ;
+    //this allows display1 to display the number previously entered in display2
+    display1.innerText = display2.innerText
 });
 
 percent.addEventListener('click', () => {

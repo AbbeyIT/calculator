@@ -20,7 +20,7 @@ let dis2Num = "";
 let result = null;
 let lastOperation = "";
 let haveDot = false;
-let haveNegative = false;
+
 
 numbers.forEach((number) => {
     number.addEventListener("click", (e) => {
